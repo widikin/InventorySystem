@@ -57,6 +57,7 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
             label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.invproductsBindingSource)).BeginInit();
@@ -85,39 +86,37 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.invusersBindingSource;
-            this.comboBox1.DisplayMember = "realname";
+            this.comboBox1.DataSource = this.invproductsBindingSource;
+            this.comboBox1.DisplayMember = "product";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(14, 179);
+            this.comboBox1.Location = new System.Drawing.Point(147, 178);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 1;
-            this.comboBox1.ValueMember = "userid";
+            this.comboBox1.ValueMember = "product";
             // 
             // comboBox2
             // 
+            this.comboBox2.DataSource = this.invproductsBindingSource;
+            this.comboBox2.DisplayMember = "serialnum";
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "-10",
-            "-1",
-            "1",
-            "10"});
-            this.comboBox2.Location = new System.Drawing.Point(165, 179);
+            this.comboBox2.Location = new System.Drawing.Point(298, 178);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 2;
+            this.comboBox2.ValueMember = "serialnum";
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(314, 180);
+            this.textBox1.Location = new System.Drawing.Point(447, 179);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(447, 179);
+            this.button1.Location = new System.Drawing.Point(580, 178);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -232,7 +231,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 164);
+            this.label1.Location = new System.Drawing.Point(12, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 8;
@@ -248,11 +247,23 @@
             label2.Text = "Display by user";
             label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // comboBox4
+            // 
+            this.comboBox4.DataSource = this.invproductsBindingSource;
+            this.comboBox4.DisplayMember = "id";
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(12, 178);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.TabIndex = 10;
+            this.comboBox4.ValueMember = "id";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(924, 644);
+            this.Controls.Add(this.comboBox4);
             this.Controls.Add(label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView1);
@@ -306,6 +317,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox4;
     }
 }
 

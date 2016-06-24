@@ -39,7 +39,16 @@ namespace InventorySystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            int id = Convert.ToInt32(comboBox4.SelectedValue);
+            string SerialNumber = Convert.ToString(comboBox2.SelectedItem);
+            int amount = Convert.ToInt32(textBox1.Text);
+            FinalDB.insertToDB(id, SerialNumber, amount);
+            /* Example code
+            int userID = Convert.ToInt32(comboBox1.SelectedValue);
+            int TransactionCode = Convert.ToInt32(comboBox2.SelectedItem);
+            int itemID = Convert.ToInt32(textBox1.Text);
+            FinalDB.insertToDB(userID, itemID, TransactionCode);
+            */
         }
     }
 }
