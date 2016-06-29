@@ -7,3 +7,4 @@ It uses the ingredients' product serial number to identify the product for easy 
 Same products with different serial numbers, bought from different retailers can be linked and specified to be the same product.
 
 TODO: A lot. Still under heavy development.
+Later to be converted to a ASP.net web application.
